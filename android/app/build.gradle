@@ -74,16 +74,16 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
-    compileSdk rootProject.ext.compileSdkVersion
+    compileSdk 34
 
     namespace "com.vision_camera"
     defaultConfig {
         applicationId "com.vision_camera"
-        minSdkVersion rootProject.ext.minSdkVersion
-        targetSdkVersion rootProject.ext.targetSdkVersion
+        minSdkVersion 23
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
+ 
     }
     signingConfigs {
         debug {
